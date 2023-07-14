@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    
+    <style>
+        body{
+            /* background-image:url(''); */
+            background-color: antiquewhite;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
+        }
+        
+        input[type]{
+            color: blue;
+            /* width: 200px; */
+            border: 3px solid rgb(14, 14, 14);
+            border-radius: 20px;
+            margin-bottom: 10px;
+            margin: center;
+            margin-left: 20px;
+            
+        }
+        .name{
+            margin-left: 60px;
+            
+        }
+    </style>
+</head>
+<body>
+      
+    <h1 style="font-family: 'Times New Roman', Times, serif ;"margin-left:20px>Signup </h1>
+    <fieldset style="margin-left: 50px;margin-right: 250px;border-width: 7px;border-radius: 10px;margin-bottom:20px ;">
+    <form action="welcome.html">
+        <input type="text"name="fname"placeholder="enter the first name"required min=""><br>
+        <input type="text"name="lname"placeholder="enter the last name"required><br>
+        <input type="email"name="email"placeholder="enter the mail id"required><br>
+         <input type="number"name="contact"placeholder="enter the mobile number"required><br>
+         <input type="date" placeholder="enter the dob"><br>
+         
+            <legend>
+                gender 
+            </legend>
+            <select >
+                <option value ="select">select</option>
+                <option value ="male">male</option>
+                <option value="female">female</option>
+                <option value="others">others</option>
+
+            </select>
+         </fieldset>
+         <!-- <input type="radio"id="male"name="gender">
+         <label for="male">male</label>
+         <input type="radio"id="female"name="gender">
+         <label for="female">female</label>
+         <input type="radio"id="others"name="gender">
+         <label for="others">others</label> -->
+
+        
+    </form>
+    <form class="name">
+        
+        <input type="checkbox"name="smsNotification"id="smsnote">
+        <label for="smsnote"></label >for SMS notification</label><br>
+        <input type="checkbox"name="mailNotification"id="smsnote">
+        <label for="smsnote"></label>for Mail notification</label><br>
+        <input type="checkbox"name="callNotification"id="smsnote">
+        <label for="smsnote"></label>for call notification</label><br>
+        <input type="submit"value="create account"style="margin-left :50px">
+    </form>
+</body>
+</html>
